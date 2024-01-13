@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.AirplaneManagementMainController">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="1200.0">
+         <left>
+            <VBox prefHeight="725.0" prefWidth="200.0" style="-fx-background-color: #CFCFCF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="AddAirplaneBtn" mnemonicParsing="false" onAction="#goToAddAirplane" prefHeight="67.0" prefWidth="202.0" text="Add Airplane">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="DeleteAirplaneBtn" mnemonicParsing="false" onAction="#goToDeleteAirplane" prefHeight="67.0" prefWidth="207.0" text="Delete Airplane">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="UpdateStatusBtn" mnemonicParsing="false" onAction="#goToUpdateAirplaneStatus" prefHeight="67.0" prefWidth="207.0" text="Update Status">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="725.0" prefWidth="1000.0" style="-fx-background-color: FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField layoutX="40.0" layoutY="29.0" style="-fx-background-color: transparent;" text="Airplane Management">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="473.0" fitWidth="554.0" layoutX="226.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/user/eclipse-workspace/FlightReservationSystem/src/application/Icons/plane.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="72.0" prefWidth="1000.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="HomeBtn" layoutX="200.0" layoutY="2.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="69.0" prefWidth="125.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="63.0" fitWidth="165.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/user/eclipse-workspace/FlightReservationSystem/src/application/Icons/MDA%20.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="1003.0" layoutY="3.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="197.0" style="-fx-background-color: transparent;" text="Admin" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:///C:/Users/user/eclipse-workspace/FlightReservationSystem/src/application/Icons/User1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="AirplaneManagementBtn" layoutX="325.0" layoutY="2.0" mnemonicParsing="false" onAction="#goToAirplaneManagementMain" prefHeight="69.0" prefWidth="211.0" style="-fx-background-color: #0591F3;" text="Airplane Management" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AirportManagementBtn" layoutX="544.0" mnemonicParsing="false" onAction="#goToAirportManagementMain" prefHeight="74.0" prefWidth="200.0" style="-fx-background-color: #0598ff;" text="Airport Management" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top></BorderPane>
+   </children>
+</AnchorPane>
